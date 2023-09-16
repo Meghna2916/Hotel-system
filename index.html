@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HOTEL GP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+        
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span></span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+               <div class = "head-bottom flex">
+                <h2>WELCOME TO NAUMI HOTEL</h2>
+                <p>NICE AND COMFORTABLE PLACE TO STAY</p>
+                <input type  = "button" class="head-btn" onClick = "parent.location='book.html'"
+                value='GET STARTED'>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#rooms">rooms</a></li>
+                <li><a href = "#customers">customers</a></li>
+            </ul>
+            <div class="popup" id="popup-1">
+                <div class="content">
+                 <div class="close-btn" onclick="togglePopup()">
+                  ×</div>
+                  
+             <h1>Sign in</h1> 
+               <div class="input-field"><input type="Email" ="text" class="validate" placeholder="Email"></div>
+               <div class="input-field"><input type="Password" ="text" class="validate" placeholder="Password"></div>
+                 <button class="second-button">Sign in</button>
+                 
+                   
+                  
+                </div>
+               </div>
+
+               
+               <button onclick="togglePopup()" class="btn sign-up">Sign In</button>
+               
+               <div class="popup" id="popup-2">
+                <div class="a1">
+                 <div class="close-btn" onclick="togglePopup2()">
+                    × </div>
+                  
+             <h1>Sign up</h1> 
+             <div class="input-field"><input type="firstname" ="text" class="validate"  placeholder="Firstname"></div>
+             <div class="input-field"><input type="lastname" ="text" class="validate" placeholder="Lastname"></div>
+               <div class="input-field"><input type="Email" ="text" class="validate" placeholder="Email"></div>
+               <div class="input-field"><input type="Password" ="text" class="validate" placeholder="Password"></div>
+               <div class="input-field"><input type="confirm password" ="text" class="validate" placeholder="confirm password"></div>
+                 <button class="second-button">Sign up</button>
+                 
+                   
+                  
+                </div>
+               </div>
+               
+            <button onclick="togglePopup2()" class="btn sign-up" >sign up</button>
+        </div>
+        
+
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>services</h2>
+            </div>
+            <!-- <div class="service-main"> -->
+            <!-- <div class = "services-container"> -->
+                <!-- single service -->
+                <article class = "service">
+                   
+                    <div class = "service-image">
+                        <img src = "./photos/foodMain.png" alt = "room image">
+                    </div>
+
+                    <div class="service-text">
+                        <h3>Dinning</h3>
+                        <!-- <h2>Food Service/ Food Runner</h2> -->
+                        <div class = "service-icon">
+                            <span>
+                                <i class = "fas fa-utensils"></i>
+                            </span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dignissimos libero ut vitae fugit aspernatur ullam pariatur praesentium quibusdam quas?
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, quos!
+                        </p>
+                       
+                        <input type  = "button" class="btn" onClick = "parent.location='food.html'"
+                        value='KNOW MORE'>
+                    </div>
+                </article>
+             
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+    
+                    
+                    <div class="service-text">
+                        <h3>Meetings & Events</h3>
+                        
+                        <div class = "service-icon">
+                            <span>
+                                <i class="fa fa-calendar"></i>
+                            </span>
+                        </div>
+                       
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dignissimos libero ut vitae fugit aspernatur ullam pariatur praesentium quibusdam quas?</p>
+                       
+                        <input type  = "button" class="btn" onClick = "parent.location='refreshment.html'"
+                        value='KNOW MORE'>
+                    </div>
+                    <div class = "service-image" >
+                        <img src = "https://www.peerspace.com/resources/wp-content/uploads/Peerspace-hotel-meeting-room-1-1024x682.jpeg" alt = "room image">
+                    </div>
+                        <!-- <input type  = "button" class="btn" onClick = "parent.location='refreshment.html'"
+                        value='KNOW MORE'> -->
+                        <!-- <h2>Refreshment</h2> -->
+                        <!-- <p>There is a big pool in the backyard, and all over the atmosphere is relaxed and inviting, with a truly welcoming staff. Food service in a patio in front of the lodge, breakfast on the nice rooftop terrace.Offering a little amuse bouche or free beverage upon arrival to the guests is an excellent way to get them in a good moof wine, a small cheese tray, a fruit place, crackers, cookies or any combination of the five.</p> -->
+                   
+                          <!-- <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span> 
+                    </div> -->
+
+
+                </div>
+                </article>
+                <!-- end of single service -->
+                
+            </div>
+
+        </section>
+
+            
+
+
+            <!-- -------------- -->
+            <!-- packages and special offer -->
+            <div class="package">
+                <div class="pack">
+                    <div class="title1">
+                        <h2>Packages & Special Offer</h1>
+                            <a href="">View all Offer -></a>
+                            <!-- <h6>View all Offer -></h6> -->
+                        </div>
+
+                            
+                   
+
+                    <div class="package-content">
+                        <div class="card">
+                            <div class="card-image">
+                            <img src="./photos/card1.png" alt="Avatar" style="width:100%">
+                        </div>
+                           <div class="card-cont">
+                          <h4>ENJOY CITY EXCURSIONS </h4>
+                          <!-- <p>Architect & Engineer</p> -->
+                          </div>
+                          </div>
+
+                          <div class="card">
+                            <div class="card-image">
+                            <img src="./photos/refreshment1.jpg" alt="Avatar" style="width:100%">
+                        </div>
+                            <div class="card-cont" >
+                          <h4>CITY STAYCATION</h4 >
+                          <!-- <p>Architect & Engineer</p> -->
+                          </div>
+                          </div>
+
+                          <div class="card">
+                            <div class="card-image">
+                            <img src="./photos/spa.png" alt="Avatar" style="width:100%">
+                        </div>
+                            <div class="card-cont">
+                          <h4>SPA WELLNESS CENTER</h4>
+                          <!-- <p>Architect & Engineer</p> -->
+                          </div>
+                          </div>
+
+                        </div>
+                    </div>
+
+                    <!-- <div class="btn-group">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>></button>
+                      </div> -->
+                </div>
+               
+            </div>
+
+
+
+
+
+        
+
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <button type = "button" class = "btn" >CHECK AVALIBALITY</button>
+                </div>
+            </form>
+        </div>
+
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>rooms</h2>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "./photos/room1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>TWO QUEENS</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                LUXURIOUS ROOM
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                COMFORTABLE AND LUXURIOUS BEDS WITH COMFORTABLE ZONE
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                GOOD STAFF SERVICE 24/7
+                            </li>
+                        </ul>
+                        <p>Two luxurious queen beds,unique amenities, plenty of room for your family and friends, and a design that marries the ruggednesswith modern edge.</p>
+                        <p>Ideal if you want to share a great room but not a bed</p>
+                        <p class = "rate">
+                            <span>₹7,499 /</span> Per Night
+                        </p>
+                        <input type  = "button" class="btn" onClick = "parent.location='book.html'"
+                        value='BOOK NOW'>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "./photos/Hotel-Room2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>THE KING</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                LUXURIOUS ROOM
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                COMFORTABLE AND RELAXING ATOMSPHERE
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                GOOD STAFF SERVICE 24/7
+                            </li>
+                        </ul>
+                        <p>A cozy, spacious room with a luxurious king bed on the first and second floor for you to rest after the long day.</p>
+                        <p>The special decor provides a modern feel with a rustic edge.</p>
+                        <p class = "rate">
+                            <span>₹8,499/</span> Per Night
+                        </p>
+                        <input type  = "button" class="btn" onClick = "parent.location='book.html'"
+                value='BOOK NOW'>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "./photos/hotelRoom3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>KING BALCONY</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                LUXURIOUS ROOM
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                RELAXING ATOMSOPHERE WITH RELAXING VIEW
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                GOOD STAFF SERVICE 24/7
+                            </li>
+                        </ul>
+                        <p>This spacious room has a king bed and a private balcony with two adirondack chairs.These rooms are on the second or third floor.</p>
+                        <p>The special decor provides a modern feel with rustic edge.</p>
+                        <p class = "rate">
+                            <span>₹9,999/</span> Per Night
+                        </p>
+                        <input type  = "button" class="btn" onClick = "parent.location='book.html'"
+                        value='BOOK NOW'>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>customers</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>We Loved it</h3>
+                        <p>An absoultely memorable holiday, Excellent hospitality. The attentivness of staff without intrusion was refreshing.whitout a doubt,I would highly rate the hotel to any visitor looking to experience in India.</p>
+                        <img src = "./photos/customer1.jpeg" alt = "customer image">
+                        <span>Customer Name, Country</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Comfortable Living</h3>
+                        <p>I've enjoyed the hotel immensely.The bathrooms are luxurious and our room was a fine size for what we reserved-and we had a lovely view which i had requested.</p>
+                        <img src = "./photos/customer.jpg" alt = "customer image">
+                        <span>Customer Name, Country</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Nice Place</h3>
+                        <p>The hotel is well located and the art work and the design of furniture etc. quite stunning. We helped when things slipped with a food order or such-staff very responsive and caring.</p>
+                        <img src = "./photos/customer3.jpg" alt = "customer image">
+                        <span>Customer Name, Country</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>Luxury Redefined, Both contemporary and elegant, conveninent and surprising, sustainable and luxurious, Hotel Naumi is part of a new generation of Hotel:inspired to be extraordinary.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Rooms</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            203 Fake St.Mountain View, Goa, India
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +910123456789
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            info@gmail.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>
